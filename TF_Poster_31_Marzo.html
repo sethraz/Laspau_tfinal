@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+
+
+
+<title>Evaluacion autentica en el Curso de Cartografía del Plan de Estudios de Ciencias Geográficas</title>
+
+<script src="TF_Poster_31_Marzo_files/header-attrs-2.13/header-attrs.js"></script>
+
+
+
+
+
+<style>
+@page {
+size: 45in 38in;
+margin: 0;
+padding: 0;
+}
+body {
+margin: 0;
+font-size: 45px;
+width: 45in;
+height: 38in;
+padding: 0;
+text-align: justify;
+font-family: Palatino;
+}
+.poster_wrap {
+width: 45in;
+height: 38in;
+padding: 0cm;
+}
+.title_container {
+width: 100%;
+height: 15%;
+overflow: hidden;
+background-color: #0b4545;
+border: 0 solid #0b4545
+;
+}
+.logo_left {
+float: left;
+width: 10%;
+height: 100%;
+background-color: #0b4545;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logo_right {
+float: right;
+width: 10%;
+height: 100%;
+background-color: #0b4545;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.poster_title {
+text-align: center;
+position: relative;
+float: left;
+width: 80%;
+height: 100%;
+color: #FFFFFF;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+}
+#title {
+font-family: Palatino;
+}
+/* unvisited link */
+a:link {
+color: #008080;
+text-decoration: none;
+}
+.mybreak {
+  break-before: column;
+}
+/* visited link */
+a:visited {
+color: #008080;
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: #008080;
+text-decoration: none;
+}
+
+/* selected link */
+a:active {
+color: #008080;
+text-decoration: none;
+}
+.poster_body {
+-webkit-column-count: 3; /* Chrome, Safari, Opera */
+-moz-column-count: 3; /* Firefox */
+column-count: 3;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 1mm;
+-moz-column-rule-width: 1mm;
+column-rule-width: 1mm;
+-webkit-column-rule-style: dashed;
+-moz-column-rule-style: dashed;
+column-rule-style: dashed;
+-webkit-column-rule-color: #0b4545;
+-moz-column-rule-color: #0b4545;
+column-rule-color: #0b4545;
+column-gap: 1em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+height: 100%;
+color: #000000
+background-color: #ffffff;
+}
+.poster_title h1 {
+font-size: 75pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_body_wrap{
+width: 45in;
+height: calc(100% - 17%);
+padding-top: calc(38in * 0.01);
+padding-bottom: calc(38in * 0.01);
+background-color: #ffffff;
+}
+.poster_title h3 {
+color: #ffffff;
+font-size: 50pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_title h3 > sup {
+  font-size: 35pt;
+  margin-left: 0.02em;
+}
+.poster_title h5 {
+color: #FFFFFF;
+font-size: 35pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+img {
+margin-top: 0;
+margin-bottom: 0;
+}
+.section {
+  padding: 0.2em;
+}
+.poster_body h1 {
+text-align: center;
+color: #FFFFFF;
+font-size: 65pt;
+border: 2mm solid #0b4545;
+background-color: #0b4545;
+border-radius: 4mm 0mm;
+margin-top: 2mm;
+margin-bottom: 2mm;
+font-weight: normal;
+}
+.poster_body h2 {
+color: #000000;
+font-size: 40pt;
+padding-left: 4mm;
+font-weight: normal;
+}
+.span {
+width: 200%;
+}
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+pre.sourceCode.r, pre.sourceCode.python {
+background-color: #ffffff20;
+border: solid #008080 1mm;
+border-radius: 0.5em;
+padding: 4mm;
+margin: auto;
+margin-top: 1em;
+margin-bottom: 1em;
+/* align-items: center; */
+}
+div.sourceCode {
+background-color: transparent;
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+}
+code.sourceCode.r, code.sourceCode.python {
+background-color: transparent;
+font-size: 20pt;
+border-radius: 2mm;
+}
+code {
+font-size: 25pt;
+font-family: monospace;
+background-color: #00808024;
+color: #008080;
+padding: 1.2mm;
+line-height: 1;
+border-radius: 2mm;
+}
+.caption {
+font-size: 20pt;
+}
+.table caption {
+font-size: 20pt;
+padding-bottom: 3mm;
+
+}
+code {
+font-size: 1em;
+font-family: monospace;
+background-color: #00808024;
+color: #0b4545;
+padding: 1.2mm;
+border-radius: 2mm;
+}
+.poster_title code {
+font-size: 1em;
+}
+table {
+font-size: 40px;
+margin: auto;
+border-top: 3px solid #666;
+border-bottom: 3px solid #666;
+}
+table thead th {
+border-bottom: 3px solid #ddd;
+}
+td {
+padding: 8px;
+}
+th {
+padding: 15px;
+}
+caption {
+margin-bottom: 10px;
+}
+.poster_body p {
+margin-right: 4mm;
+margin-left: 4mm;
+margin-top: 6mm;
+margin-bottom: 10mm;
+color: #000000
+}
+.poster_body ol {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+#ul {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+.references p {
+font-size: 20pt;
+}
+.orcid img {
+  width: 1em;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+<div class="title_container">
+<!-- Left Logo  -->
+<div class="logo_left">
+<img src=./fig/img-partner-laspau.jpg style="width: 80%">
+</div>
+<!-- Poster Title -->
+<div class= "poster_title">
+<h1 id="title">Evaluacion autentica en el Curso de Cartografía del Plan de Estudios de Ciencias Geográficas</h1>
+<h3 id="author">Marilyn Romero Vargas<sup>1, <a class="orcid" href="https://orcid.org/0000-0001-6840-5803"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup>, Luis F. Sandoval Murrillo<sup>1, <a class="orcid" href="https://orcid.org/0000-0002-8325-1117"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup>, Omar E. Barrantes Sotela<sup>1, <a class="orcid" href="https://orcid.org/0000-0003-4225-5784"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup></h3>
+<h5 id="affiliation"><sup>1</sup> Escuela de Ciencias Geográficas, Universidad Nacional</h5>
+</div>
+<!-- Right Logo  -->
+<div class="logo_right">
+<img src=./fig/imgpreview.jpg style="width: 80%">
+</div>
+</div>
+
+<div class='poster_body_wrap'>
+<div class='poster_body'>
+<div id="disciplina" class="section level1">
+<h1>Disciplina</h1>
+<p>El curso de Cartografía tiene como objetivo general la introducción a los fundamentos de lectura y uso práctico (mediciones y cálculos) de mapas y documentos cartográficos en general, es un curso de tipo teórico-práctico en el cual al estudiante se le instruye en los métodos y problemas cartográficos más comunes, los que a la vez son básicos para resolver eficazmente problemas de niveles más complejos. Se introduce al estudiante en el soporte teórico de cada tema a estudiar y se apoya el aprendizaje mediante ejercicios prácticos aplicados especialmente sobre mapas de la cartografía básica de Costa Rica. Este es un curso presencial de la carrera de Ciencias Geográficas de la Escuela de Ciencias Geográficas de la Universidad Nacional, el cual durante la pandemia COVID19 se ajustó a la modalidad de “presencialidad remota,” lo que significó un modelo en línea bajo el aprendizaje de aula invertida.</p>
+<p><strong>Número de estudiantes: 38.</strong></p>
+<p><strong>Nivel: Pregrado, primer nivel.</strong></p>
+</div>
+<div id="idea-principal-de-innovación" class="section level1">
+<h1>Idea Principal de Innovación</h1>
+<p>Donde se desarrollarán aprendizajes activos asicrónicos y sincrónicos con evaluaciones autenticas a partir de la indagación y resolución de problemas cartográficos, mediante estudios de casos realistas o reales.</p>
+</div>
+<div id="plan-de-implementación" class="section level1">
+<h1>Plan de Implementación</h1>
+<p>El curso presenta tres grandes temas:</p>
+<ol style="list-style-type: decimal">
+<li>Introducción a la cartografía.</li>
+<li>Estructura y composición cartográfica.</li>
+<li>Localización y navegación.</li>
+</ol>
+<p>Los cuales se desarrollarán en las siguientes secuencias:</p>
+<p><strong>FASE 1: </strong>
+Componente asincrónico contempla actividades previas a las sesiones sincrónicas donde se incluye: material de lectura y audiovisual, así como aplicaciones interactivas generadas por el docente. Se acompaña de una actividad evaluada por medio de pares con retroalimentación. El tiempo estimado para el desarrollo de esta fase es de 3 horas a la semana.</p>
+<p><strong>FASE 2:</strong>
+Componente sincrónico en el que se realizan actividades grupales orientadas a la resolución de problemas cartográficos realistas o reales y discusiones, con la orientación y retroalimentación oportuna del docente. El tiempo estimado de desarrollo es de 2 horas a la semana.</p>
+<p><strong>FASE 3:</strong>
+Componente asincrónica los estudiantes se centran en la resolución de problemas (prácticas) de forma grupal e individual, con horas de atención establecidas previamente por el docente. El tiempo estimado de desarrollo 3 horas de estudio independiente a la semana.</p>
+<p><strong>Estrategia de evaluación autentica</strong></p>
+<p>Se aplicarán evaluaciones auténticas como:</p>
+<ol style="list-style-type: decimal">
+<li>Prácticas con retroalimentación inmediata sobre los procedimientos y resultados.</li>
+<li>Desarrollo de estudios de casos sobre problemas cartográficos, lo que implica que los estudiantes revisen el material de clase e investiguen por su cuenta para resolverlos de forma creativa.</li>
+<li>Uso de aplicaciones WEB y dispositivos móviles para la lectura y navegación usando mapas (GPS), mediante estrategias aplicadas a juegos como <strong>Geocaché</strong>, que consiste en actividades de búsqueda de tesoros al aire libre.</li>
+</ol>
+<p><strong>Ideas de cambio efectivo y sostenible</strong></p>
+<p>Se elaborará material audiovisual con los contenidos teóricos y resolución de problemas cartográficos de forma asincrónica. Por ejemplo, videos de 5 minutos en temas como:
+- Conversión de coordenadas geográficas a métricas.
+- Cálculo áreas en un mapa o plano
+- Construcción de perfiles topográficos</p>
+<p>En la sesión sincrónica, se abordan dudas, se realizan prácticas en grupos y se discuten los resultados con el grupo en plenario. Con el fin de que los aprendizajes sean más activos y significativos.</p>
+</div>
+<div id="evidencia-gráfica" class="section level1">
+<h1>Evidencia gráfica</h1>
+<center>
+<embed src="./fig/ometepe.pdf" title="fig:" class="centered" style="width:20cm;height:15cm" />
+<center>
+<center>
+<embed src="./maps/OmetepeA.pdf" title="fig:" class="centered" style="width:20cm;height:15cm" />
+<center>
+</div>
+<div id="indicadores-de-logro" class="section level1">
+<h1>Indicadores de logro</h1>
+<p><em>Objetivo 1: Desarrollar capacidades y destrezas en los estudiantes en el manejo e interpretación de mapas.</em></p>
+<p><em>Indicador 1</em>
+Mejora continua en las evaluaciones de las prácticas por parte de los estudiantes.</p>
+<p><strong>Instrumentos</strong>
+- Portafolio de prácticas cartográficas.
+- Informe de práctica final.</p>
+<p><strong>Tiempo:</strong> Durante todo el semestre.</p>
+<p><strong>Análisis</strong>
+Se revisan las prácticas para cada tema, en las cuales se señalan debilidades y fortalezas a partir de procesos de retroalimentación. Posteriormente, el portafolio se compara con la práctica final, para evidenciar el avance y comprensión del estudiante.</p>
+<p><em>Objetivo 2: Dotar al estudiante de técnicas y herramientas materiales e instrumentos</em></p>
+<p><em>Indicador 2</em>
+Mejorar la cantidad y calidad de materiales y recursos disponibles para los estudiantes.</p>
+<p><strong>Recursos y materiales</strong>
+- Bases de datos en moodle de los ejercicios generados por cada estudiante durante todo el semestre.
+- Material audiovisual de los contenidos teóricos (Videos de 5 a 10 minutos de teoría).
+- Preparación de guía de prácticas (Múltiples Formatos: PDF y Html)</p>
+<p><strong>Tiempo</strong>
+Período de planificación del curso. Durante el curso (período de transición).</p>
+<p><strong>Análisis</strong>
+Evaluación mediante un instrumento de encuesta aplicado a los estudiantes, sobre los materiales y herramientas utilizadas en el curso.</p>
+</div>
+<div id="obstáculos" class="section level1">
+<h1>Obstáculos</h1>
+<p>No sé observa ningún obstáculo para implementar este tipo de aprendizajes. En la Universidad Nacional se respeta la libertad de cátedra, siempre y cuando se cumpla lo establecido en el descriptor del curso y plan de estudio de la carrera.</p>
+</div>
+<div id="video" class="section level1">
+<h1>Video</h1>
+<p>COLOCAR URL DEL VIDEO…</p>
+</div>
+<div id="correos-de-contácto" class="section level1">
+<h1>Correos de contácto</h1>
+<p><a href="mailto:omar.barrantes.sotela@una.ac.cr" class="email">omar.barrantes.sotela@una.ac.cr</a>
+<a href="mailto:luis.sandoval.murillo@una.ac.cr" class="email">luis.sandoval.murillo@una.ac.cr</a>
+<a href="mailto:marilyn.romero.vargas@una.ac.cr" class="email">marilyn.romero.vargas@una.ac.cr</a></p>
+</div>
+<div id="referencias" class="section level1 unnumbered">
+<h1>Referencias</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Allan2004" class="csl-entry">
+Allan, L., Arthur. 2004. <em>Math for Map Makers</em>. Caithness: Whittles Pblishing.
+</div>
+<div id="ref-Fleming1995" class="csl-entry">
+Fleming, J. 1995. <em>Todo Sobre El Mapa y La Brújula</em>. 1st ed. Madrid: Ediciones Desnivel.
+</div>
+<div id="ref-Lapaine2017" class="csl-entry">
+Lapaine, Miljenko. 2004. <em>Choosing a Map Projection</em>. Edited by Miljenko Lapaine and E. Lynn Usery. Zagreb: Springer. <a href="https://doi.org/10.1007/978-3-319-51835-0">https://doi.org/10.1007/978-3-319-51835-0</a>.
+</div>
+<div id="ref-Raisz1983" class="csl-entry">
+Raisz, E. 1983. <em>Cartografía</em>. 1st ed. Madrid: Editorial Omega.
+</div>
+<div id="ref-Robinson1995" class="csl-entry">
+Robinson, A. 1995. <em>Elements of Cartography</em>. 1st ed. New Jersey: John Wiley; Sons, Inc.
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
