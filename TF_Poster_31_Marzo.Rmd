@@ -1,0 +1,140 @@
+---
+title: Evaluacion autentica en el Curso de Cartografía del Plan de Estudios de Ciencias Geográficas
+author:
+  - name: Marilyn Romero Vargas
+    affil: 1
+    orcid: '0000-0001-6840-5803'
+  - name: Luis F. Sandoval Murrillo
+    affil: 1
+    orcid: '0000-0002-8325-1117'
+  - name: Omar E. Barrantes Sotela
+    affil: 1
+    orcid: '0000-0003-4225-5784'
+affiliation:
+  - num: 1
+    address: Escuela de Ciencias Geográficas, Universidad Nacional
+  
+column_numbers: 3
+logoright_name: './fig/imgpreview.jpg'
+logoleft_name: './fig/img-partner-laspau.jpg'
+output: 
+  #posterdown::posterdown_betterland:
+  posterdown::posterdown_html:
+    #self_contained: true
+    self_contained: false
+bibliography: Ref_poster.bib
+nocite: '@*'
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Disciplina
+
+El curso de Cartografía tiene como objetivo general la introducción a los fundamentos de lectura y uso práctico (mediciones y cálculos) de mapas y documentos cartográficos en general, es un curso de tipo teórico-práctico en el cual al estudiante se le instruye en los métodos y problemas cartográficos más comunes, los que a la vez son básicos para resolver eficazmente problemas de niveles más complejos. Se introduce al estudiante en el soporte teórico de cada tema a estudiar y se apoya el aprendizaje mediante ejercicios prácticos aplicados especialmente sobre mapas de la cartografía básica de Costa Rica. Este es un curso presencial de la carrera de Ciencias Geográficas de la Escuela de Ciencias Geográficas de la Universidad Nacional, el cual durante la pandemia COVID19 se ajustó a la modalidad de "presencialidad remota", lo que significó un modelo en línea bajo el aprendizaje de aula invertida. 
+
+**Número de estudiantes: 38.**
+
+**Nivel: Pregrado, primer nivel.**
+
+# Idea Principal de Innovación
+
+Donde se desarrollarán aprendizajes activos asicrónicos y sincrónicos con evaluaciones autenticas a partir de la indagación y resolución de problemas cartográficos, mediante estudios de casos realistas o reales.
+
+# Plan de Implementación
+
+El curso presenta tres grandes temas:
+
+1. Introducción a la cartografía.
+2. Estructura y composición cartográfica.
+3. Localización y navegación.
+
+Los cuales se desarrollarán en las siguientes secuencias:
+
+**FASE 1: **
+Componente asincrónico contempla actividades previas a las sesiones sincrónicas donde se incluye: material de lectura y audiovisual, así como aplicaciones interactivas generadas por el docente. Se acompaña de una actividad evaluada por medio de pares con retroalimentación. El tiempo estimado para el desarrollo de esta fase es de 3 horas a la semana.
+
+**FASE 2:**
+Componente sincrónico en el que se realizan actividades grupales orientadas a la resolución de problemas cartográficos realistas o reales y discusiones, con la orientación y retroalimentación oportuna del docente. El tiempo estimado de desarrollo es de 2 horas a la semana.
+
+**FASE 3:**
+Componente asincrónica los estudiantes se centran en la resolución de problemas (prácticas) de forma grupal e individual, con horas de atención establecidas previamente por el docente. El tiempo estimado de desarrollo 3 horas de estudio independiente a la semana.
+
+**Estrategia de evaluación autentica**
+
+Se aplicarán evaluaciones auténticas como:
+
+1. Prácticas con retroalimentación inmediata sobre los procedimientos y resultados.
+2. Desarrollo de estudios de casos sobre problemas cartográficos, lo que implica que los estudiantes revisen el material de clase e investiguen por su cuenta para resolverlos de forma creativa.
+3. Uso de aplicaciones WEB y dispositivos móviles para la lectura y navegación usando mapas (GPS), mediante estrategias aplicadas a juegos como **Geocaché**, que consiste en actividades de búsqueda de tesoros al aire libre.
+
+**Ideas de cambio efectivo y sostenible**
+
+Se elaborará material audiovisual con los contenidos teóricos y resolución de problemas cartográficos de forma asincrónica. Por ejemplo, videos de 5 minutos en temas como:
+  - Conversión de coordenadas geográficas a métricas.
+  - Cálculo áreas en un mapa o plano
+  - Construcción de perfiles topográficos
+
+En la sesión sincrónica, se abordan dudas, se realizan prácticas en grupos y se discuten los resultados con el grupo en plenario. Con el fin de que los aprendizajes sean más activos y significativos.
+
+# Evidencia gráfica
+
+<center>
+![Mapa 1. Isla de Ometepe (Modelo de elevaciones)](./fig/ometepe.pdf){width=20cm height=15cm .centered}
+<center>
+
+<center>
+![Actividad 1. Elaboración de Perfil Topográfico de la Isla de Ometepe.](./maps/OmetepeA.pdf){width=20cm height=15cm .centered}
+<center>
+
+# Indicadores de logro
+
+*Objetivo 1: Desarrollar capacidades y destrezas en los estudiantes en el manejo e interpretación de mapas.*
+
+*Indicador 1* 
+Mejora continua en las evaluaciones de las prácticas por parte de los estudiantes.
+
+**Instrumentos**
+- Portafolio de prácticas cartográficas.
+- Informe de práctica final. 
+
+**Tiempo:** Durante todo el semestre.
+
+**Análisis**
+Se revisan las prácticas para cada tema, en las cuales se señalan debilidades y fortalezas a partir de procesos de retroalimentación. Posteriormente, el portafolio se compara con la práctica final, para evidenciar el avance y comprensión del estudiante.
+
+*Objetivo 2: Dotar al estudiante de técnicas y herramientas materiales e instrumentos*
+
+*Indicador 2*
+Mejorar la cantidad y calidad de materiales y recursos disponibles para los estudiantes.
+
+**Recursos y materiales**
+- Bases de datos en moodle de los ejercicios generados por cada estudiante durante todo el semestre.
+- Material audiovisual de los contenidos teóricos (Videos de 5 a 10 minutos de teoría).
+- Preparación de guía de prácticas (Múltiples Formatos: PDF y Html)
+
+**Tiempo**
+Período de planificación del curso. Durante el curso (período de transición).
+
+**Análisis**
+Evaluación mediante un instrumento de encuesta aplicado a los estudiantes, sobre los materiales y herramientas utilizadas en el curso. 
+
+# Obstáculos 
+
+No sé observa ningún obstáculo para implementar este tipo de aprendizajes. En la Universidad Nacional se respeta la libertad de cátedra, siempre y cuando se cumpla lo establecido en el descriptor del curso y plan de estudio de la carrera.
+
+# Video
+
+COLOCAR URL DEL VIDEO...
+
+# Correos de contácto
+
+omar.barrantes.sotela@una.ac.cr
+luis.sandoval.murillo@una.ac.cr
+marilyn.romero.vargas@una.ac.cr
+
+# Referencias
+
+
